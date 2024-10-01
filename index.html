@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أهمية وأنواع الصحافة</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 700px;
+            margin: auto;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        p {
+            line-height: 1.6;
+            color: #666;
+        }
+        h2 {
+            color: #444;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        ul {
+            list-style-type: square;
+            margin-left: 20px;
+            color: #444;
+        }
+        button {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #555;
+        }
+        .content {
+            opacity: 0;
+            max-height: 0;
+            overflow: hidden;
+            transition: opacity 0.5s ease, max-height 0.5s ease;
+        }
+        .content.show {
+            opacity: 1;
+            max-height: 1000px; /* تحديد أقصى ارتفاع ليتسع المحتوى */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>أهمية الصحافة وأنواعها</h1>
+        
+        <button onclick="showContent('importance')">أهمية الصحافة</button>
+        <button onclick="showContent('types')">أنواع الصحافة</button>
+
+        <div id="importance" class="content">
+            <h2>أهمية الصحافة</h2>
+            <p>
+                الصحافة ليست مجرد وسيلة لنقل الأخبار، بل هي ركيزة أساسية في بناء المجتمع وتحقيق الشفافية. تتميز الصحافة بعدة أدوار حيوية، منها:
+            </p>
+            <ul>
+                <li><strong>التوعية المجتمعية:</strong> تعمل الصحافة على نشر الوعي حول القضايا الاجتماعية والسياسية والاقتصادية، مما يساعد الجمهور على اتخاذ قرارات مستنيرة.</li>
+                <li><strong>محاربة الفساد:</strong> الصحافة الاستقصائية تسهم في كشف الفساد والتجاوزات في القطاعات المختلفة، ما يدعم سيادة القانون والعدالة.</li>
+                <li><strong>تعزيز الديمقراطية:</strong> الصحافة تُعتبر وسيلة لمراقبة السلطة والتعبير عن رأي الجمهور، مما يعزز مفاهيم الحرية وحقوق الإنسان.</li>
+                <li><strong>تأثيرها على الرأي العام:</strong> للصحافة قدرة كبيرة على توجيه الرأي العام وإحداث تغييرات ملموسة في سياسات الدول والمجتمعات.</li>
+                <li><strong>دورها في الأزمات:</strong> أثناء الكوارث والأزمات (مثل الحروب أو الكوارث الطبيعية)، تلعب الصحافة دورًا مهمًا في نقل المعلومات وتوعية الناس بكيفية التعامل مع الأحداث.</li>
+                <li><strong>أهمية الصحافة في العصر الرقمي:</strong> في ظل التطور التكنولوجي، أصبحت الصحافة الرقمية تكتسب أهمية متزايدة، حيث تسهم في تقديم الأخبار بسرعة ودقة، مع القدرة على التفاعل المباشر مع الجمهور.</li>
+            </ul>
+        </div>
+
+        <div id="types" class="content">
+            <h2>أنواع الصحافة</h2>
+            <p>الصحافة تتنوع بحسب مجالات التغطية الإعلامية وطبيعة المحتوى المقدم، ومن أبرز أنواع الصحافة:</p>
+            <ul>
+                <li><strong>الصحافة الإخبارية:</strong> تُعنى بنقل الأحداث والوقائع اليومية سواء على المستوى المحلي أو الدولي، وتقديم التحليلات المرتبطة بها.</li>
+                <li><strong>الصحافة الاستقصائية:</strong> تسعى لكشف الحقائق المخفية من خلال تحقيقات عميقة حول قضايا معينة، مثل الفساد أو الانتهاكات الحقوقية.</li>
+                <li><strong>الصحافة الرياضية:</strong> تُغطي الأحداث الرياضية وتقدم التحليلات حول المباريات والأداء الرياضي، وتتابع أخبار اللاعبين والأندية.</li>
+                <li><strong>الصحافة الاقتصادية:</strong> تُغطي الأخبار الاقتصادية وتحلل الأسواق المالية والأعمال التجارية، وتتابع تطورات الاقتصاد العالمي والمحلي.</li>
+                <li><strong>الصحافة الثقافية:</strong> تركز على الفنون والآداب، وتغطي الفعاليات الثقافية مثل المعارض الفنية والمهرجانات الأدبية والسينمائية.</li>
+                <li><strong>الصحافة البيئية:</strong> تعنى بتغطية القضايا البيئية مثل التغير المناخي، التلوث، وحماية الموارد الطبيعية.</li>
+                <li><strong>الصحافة الرقمية:</strong> تعتمد على الإنترنت ووسائل الإعلام الحديثة لتقديم الأخبار والمعلومات عبر المواقع الإلكترونية ووسائل التواصل الاجتماعي.</li>
+                <li><strong>الصحافة العلمية:</strong> تقدم تقارير وتحليلات حول الأبحاث والاكتشافات العلمية وتساهم في نشر الثقافة العلمية بين الجمهور.</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <script>
+        function showContent(contentId) {
+            // إخفاء كل المحتويات
+            document.querySelectorAll('.content').forEach(function(content) {
+                content.classList.remove('show');
+            });
+
+            // إظهار المحتوى المطلوب مع تأثير
+            document.getElementById(contentId).classList.add('show');
+        }
+    </script>
+
+</body>
+</html>
